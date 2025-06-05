@@ -1,0 +1,19 @@
+#notesHeader {
+    position: fixed;
+    top: 0;
+    background-color: lightblue;
+    width: 100%;
+    height: 50px;
+}
+#metadata-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
