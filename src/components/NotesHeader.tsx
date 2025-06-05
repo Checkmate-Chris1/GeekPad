@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './NotesHeader.css'
+import './NotesHeader.css';
 
 function NotesHeader() {
     const [title, setTitle] = useState('Lorem Ipsum');
@@ -15,6 +15,17 @@ function NotesHeader() {
                     <span className="metadata-item">Modified: {modifiedDate}</span>
                 </div>
                 <button onClick={() => alert('Register functionality not implemented yet!')}>Login/Register</button>
+                <ul className="list-group">
+                    <li>
+                        <button className="list-group-item" onClick={() => alert('New note functionality not implemented yet!')}>New Note</button>
+                    </li>
+                    <li>
+                        <button className="list-group-item" onClick={() => alert('Save note functionality not implemented yet!')}>Save Note</button>
+                    </li>
+                    <li>
+                        <button className="list-group-item" onClick={() => alert('Delete note functionality not implemented yet!')}>Delete Note</button>
+                    </li>
+                </ul>
             </div>
         </div>
     );
