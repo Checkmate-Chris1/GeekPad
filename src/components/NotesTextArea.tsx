@@ -1,13 +1,19 @@
+import './NotesTextArea.css';
+
 function NotesTextArea() {
     return (
         <div className="notes-textarea">
             <textarea
-                className="notes-input"
+                className="form-control"
                 placeholder="Type your notes here..."
-                rows={10}
-                cols={50}
+                rows={20}
+                cols={1000}
+                
             ></textarea>
+            <div className="mb-3">
+</div>
         </div>
+        
     )
 }
 

@@ -1,7 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.css'
-import App from './pages/App.tsx'
 import NoteEditor from './pages/NoteEditor.tsx'
 
 createRoot(document.getElementById('root')!).render(

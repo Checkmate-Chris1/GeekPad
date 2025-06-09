@@ -1,15 +1,16 @@
 import NotesHeader from '../components/NotesHeader';
 import NotesTextArea from '../components/NotesTextArea';
 // import NotesPreview from '../components/NotesPreview';
+import './NoteEditor.css'
 
 function noteEditor() {
     return (
         <>
             <NotesHeader />
 
-            <div className="pane-holder">
+            <div id="pane-holder">
                 <NotesTextArea />
-                {/* <NotesPreview /> */}
+                <NotesTextArea /> {/* <NotesPreview /> */}
             </div>
         </>
     );
