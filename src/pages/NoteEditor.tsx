@@ -1,5 +1,5 @@
 import NotesHeader from '../components/NotesHeader';
-// import NotesTextArea from '../components/NotesTextArea';
+import NotesTextArea from '../components/NotesTextArea';
 // import NotesPreview from '../components/NotesPreview';
 
 function noteEditor() {
@@ -7,10 +7,10 @@ function noteEditor() {
         <>
             <NotesHeader />
 
-            {/* <div class="pane-holder">
+            <div className="pane-holder">
                 <NotesTextArea />
-                <NotesPreview />
-            </div> */}
+                {/* <NotesPreview /> */}
+            </div>
         </>
     );
 }

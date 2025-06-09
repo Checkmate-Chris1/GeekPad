@@ -10,22 +10,24 @@ function NotesHeader() {
         <div id="notes-header">
             <div className="header-info">
                 <div id="metadata-info">
-                    <span className="metadata-item">Title: {title}</span>
+                    <span className="metadata-item"><strong>Title: {title}</strong></span>
                     <span className="metadata-item">Created: {createdDate}</span>
                     <span className="metadata-item">Modified: {modifiedDate}</span>
                 </div>
-                <button onClick={() => alert('Register functionality not implemented yet!')}>Login/Register</button>
-                <ul className="list-group">
-                    <li>
-                        <button className="list-group-item" onClick={() => alert('New note functionality not implemented yet!')}>New Note</button>
-                    </li>
-                    <li>
-                        <button className="list-group-item" onClick={() => alert('Save note functionality not implemented yet!')}>Save Note</button>
-                    </li>
-                    <li>
-                        <button className="list-group-item" onClick={() => alert('Delete note functionality not implemented yet!')}>Delete Note</button>
-                    </li>
-                </ul>
+                <button className="btn btn-primary" onClick={() => alert('Register functionality not implemented yet!')}>Login/Register</button>
+            </div>
+
+            <div className="header-info">
+                <form id="pane-form">
+                    <div className="form-check">
+                        <input className="form-check-input" type="checkbox" value="" defaultChecked />
+                        <label className="form-check-label" htmlFor="checkChecked">Raw Text Window</label>
+                    </div>
+                    <div className="form-check">
+                        <input className="form-check-input" type="checkbox" value="" defaultChecked />
+                        <label className="form-check-label" htmlFor="checkChecked">Formatted Text Window</label>
+                    </div>
+                </form>
             </div>
         </div>
     );

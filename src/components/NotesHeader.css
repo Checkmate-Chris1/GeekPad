@@ -1,14 +1,22 @@
-#notesHeader {
-    position: fixed;
+#notes-header {
+    z-index: 1000;
+    padding: 2rem;
     top: 0;
+    left: 0;
     background-color: lightblue;
     width: 100%;
-    height: 50px;
 }
 #metadata-info {
     display: flex;
     flex-direction: column;
     justify-content: left;
+    background-color: lightskyblue;
+    padding: 5px 50px;
+    border-radius: 5px;
+}
+#pane-form {
+    display: flex;
+    gap: 1rem;
 }
 
 .header-info {
