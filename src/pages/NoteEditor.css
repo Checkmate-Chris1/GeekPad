@@ -1,6 +1,14 @@
 #pane-holder {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 1rem;
+}
+
+.notes-textarea {
+    width: 48vw;
+}
+
+textarea {
+    height: 70vh;
 }
