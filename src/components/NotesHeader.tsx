@@ -14,11 +14,11 @@ function NotesHeader() {
                     <span className="metadata-item">Created: {createdDate}</span>
                     <span className="metadata-item">Modified: {modifiedDate}</span>
                 </div>
-                <button className="btn btn-primary" onClick={() => alert('Register functionality not implemented yet!')}>Login/Register</button>
+                <button id="login-button" className="btn btn-primary" onClick={() => alert('Register functionality not implemented yet!')}>Login/Register</button>
             </div>
 
             <div className="header-info">
-                <form id="pane-form">
+                <form className="doc-options">
                     <div className="form-check">
                         <input className="form-check-input" type="checkbox" value="" defaultChecked />
                         <label className="form-check-label" htmlFor="checkChecked">Raw Text Window</label>
@@ -28,6 +28,11 @@ function NotesHeader() {
                         <label className="form-check-label" htmlFor="checkChecked">Formatted Text Window</label>
                     </div>
                 </form>
+                <div className="doc-options">
+                    <button type="button" className="btn btn-outline-light">Copy</button>
+                    <button type="button" className="btn btn-outline-primary">Edit</button>
+                    <button type="button" className="btn btn-outline-danger">Delete</button>
+                </div>
             </div>
         </div>
     );

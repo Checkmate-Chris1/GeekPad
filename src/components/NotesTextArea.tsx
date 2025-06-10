@@ -7,7 +7,7 @@ function NotesTextArea() {
                 className="form-control"
                 placeholder="Type your notes here..."
                 rows={20}
-                cols={1000}
+                cols={75}
                 
             ></textarea>
             <div className="mb-3">
