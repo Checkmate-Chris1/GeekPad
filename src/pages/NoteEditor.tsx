@@ -15,8 +15,8 @@ export default function NoteEditor() {
             <NotesHeader title={title} createdDate={createdDate} modifiedDate={modifiedDate} />
 
             <div id="pane-holder">
-                <NotesTextArea />
-                <NotesPreview />
+                <NotesTextArea text={text} onChange={setText} />
+                <NotesPreview text={text} />
             </div>
         </>
     );
