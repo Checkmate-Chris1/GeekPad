@@ -1,10 +1,12 @@
-import { useState } from 'react';
 import './NotesHeader.css';
 
-function NotesHeader() {
-    const [title, setTitle] = useState('Lorem Ipsum');
-    const [createdDate, setCreatedDate] = useState('6/4/2025');
-    const [modifiedDate, setModifiedDate] = useState('6/4/2025');
+interface Props {
+    title: string;
+    createdDate: string;
+    modifiedDate: string;
+}
+
+export default function NotesHeader({ title, createdDate, modifiedDate }: Props) {
 
     return (
         <div id="notes-header">
@@ -37,5 +39,3 @@ function NotesHeader() {
         </div>
     );
 }
-
-export default NotesHeader;

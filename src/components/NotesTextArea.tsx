@@ -1,12 +1,10 @@
 import './NotesTextArea.css';
 
-function NotesTextArea() {
+export default function NotesTextArea() {
     return (
-        <div className="notes-textarea">
+        <div id="notes-textarea">
             <textarea className="form-control" placeholder="Type your notes here..." />
         </div>
         
     )
 }
-
-export default NotesTextArea;
