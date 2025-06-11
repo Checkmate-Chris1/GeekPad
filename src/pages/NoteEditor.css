@@ -3,10 +3,19 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 1rem;
+    gap: 1rem;
 }
 
 #notes-textarea {
-    width: 48vw;
+    width: 100%;
+}
+
+#notes-preview {
+    width: 100%;
+    padding: 1rem;
+    background-color: lightgrey;
+    border-radius: 0.25rem;
+    overflow-y: auto;
 }
 
 textarea {
