@@ -20,7 +20,7 @@ export default function NotesHeader({ title, createdDate, modifiedDate, rawCallb
                 </div>
                 <div className="doc-options">
                     <button style={{fontFamily: 'Times New Roman'}} className="btn btn-secondary"><strong>B</strong></button>
-                    <button style={{fontFamily: 'Times New Roman'}} className="btn btn-secondary"><i>I</i></button>
+                    <button style={{fontFamily: 'Times New Roman'}} className="btn btn-secondary"><em>I</em></button>
                     <button style={{fontFamily: 'Times New Roman', textDecoration: 'underline'}} className="btn btn-secondary">U</button>
                 </div>
                 <button id="login-button" className="btn btn-primary" onClick={() => alert('Register functionality not implemented yet!')}>Login/Register</button>
