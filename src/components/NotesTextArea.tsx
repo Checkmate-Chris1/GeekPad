@@ -1,11 +1,11 @@
 import './NotesTextArea.css';
 
 interface Props {
-    text: string;
+    children: string;
     onChange: (text: string) => void;
 }
 
-export default function NotesTextArea({text, onChange: setText}: Props) {
+export default function NotesTextArea({children: text, onChange: setText}: Props) {
     return (
         <div id="notes-textarea">
             <textarea className="form-control" placeholder="Type your notes here..." 

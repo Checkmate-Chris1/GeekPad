@@ -12,12 +12,13 @@ export default function NoteEditor() {
     const [showTextWindow, setShowTextWindow] = useState(true);
     const [showPreviewWindow, setShowPreviewWindow] = useState(true);
 
+
     return (
         <>
             <NotesHeader title={title} createdDate={createdDate} modifiedDate={modifiedDate} rawCallback={setShowTextWindow} formattedCallback={setShowPreviewWindow} />
 
             <div id="pane-holder">
-                {showTextWindow && <NotesTextArea text={text} onChange={setText} />}
+                {showTextWindow && <NotesTextArea onChange={setText}>{text}</NotesTextArea>}
                 {showPreviewWindow && <NotesPreview text={text} />}
             </div>
         </>
