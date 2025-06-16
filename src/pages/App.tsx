@@ -12,13 +12,15 @@ export default function App() {
         content: ""
     });
 
-    return (
-        <>
-            { !noteSelected && <HomePage loadNote={(note: Note) => {
+    const loadNote = (note: Note) => {
                 setNoteSelected(true);
                 setNoteMetadata(note);
-            }} /> }
-            { noteSelected && <NoteEditor note={noteMetadata} /> }
+    }
+
+    return (
+        <>
+            { !noteSelected && <HomePage onLoad={loadNote} /> }
+            { noteSelected && <NoteEditor>{noteMetadata}</NoteEditor> }
         </>
     );
 }

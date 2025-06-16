@@ -12,19 +12,19 @@ const notes: Note[] = [
         title: "Note 1",
         createdDate: "2023-01-01",
         modifiedDate: "2023-01-02",
-        content: "This is the content of Note 1"
+        content: "This is a short description of Note 1"
     },
     {
         title: "Note 2",
         createdDate: "2023-01-03",
         modifiedDate: "2023-01-04",
-        content: "This is the content of Note 2"
+        content: "# Header\n## Subtitle\nThis is a long description with subtitle stuff. Cool!"
     },
     {
         title: "Note 3",
         createdDate: "2023-01-05",
         modifiedDate: "2023-01-06",
-        content: "This is the content of Note 3"
+        content: "**Here** is the markdown capability.\nLine break just happened, `isn't that cool?`"
     },
     {
         title: "Note 4",
@@ -34,7 +34,7 @@ const notes: Note[] = [
     }
 ];
 
-export default function HomePage({loadNote}: {loadNote: (note: Note) => void}) {
+export default function HomePage({onLoad: loadNote}: {onLoad: (note: Note) => void}) {
 
     return (
         <>

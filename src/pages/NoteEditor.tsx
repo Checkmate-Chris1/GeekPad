@@ -5,7 +5,11 @@ import { useState } from 'react';
 import type { Note } from './HomePage.tsx';
 import './NoteEditor.css'
 
-export default function NoteEditor({ note }: { note: Note }) {
+interface Props {
+    children: Note;
+}
+
+export default function NoteEditor({ children: note }: Props) {
     const [title, setTitle] = useState(note.title);
     const [createdDate, setCreatedDate] = useState(note.createdDate);
     const [modifiedDate, setModifiedDate] = useState(note.modifiedDate);
